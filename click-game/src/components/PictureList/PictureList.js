@@ -3,15 +3,17 @@ import "./PictureList.css";
 import Picture from '../Picture/Picture';
 
 const PictureList = props =>
-  <ul>
-    {props.results.map(result =>
-      <li key={result}>
+  <div>
+    {props.results.map((result, index) =>
+      <div key={result}>
         <Picture
           pictureColor={result}
-          
+          cats={props.cats[index]}
+          whenPictureClicked={props.whenPictureClicked}
+          id={index + 1}
         />
-      </li>
+      </div>
     )}
-  </ul>;
+  </div>;
 
 export default PictureList;

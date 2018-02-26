@@ -1,53 +1,78 @@
 .picture1 {
-    background-color: red;
+    background-image: url("./pictures/cat1.jpg");
+    border-radius: 25px;
     height: 200px;
     width: 200px;
+    float: left;
+    margin-left: 3%;
 }
 
 .picture2 {
-    background-color: blue;
+    background-image: url("./pictures/cat2.jpg");
+    border-radius: 25px;
     height: 200px;
     width: 200px;
+    float: right;
+    margin-right: 3%;
 }
 
 .picture3 {
-    background-color: orange;
+    background-image: url("./pictures/cat3.jpg");
+    border-radius: 25px;
     height: 200px;
     width: 200px;
+    margin-left: 35%;
 }
 
 .picture4 {
-    background-color: yellow;
+    float: none;
+    background-image: url("./pictures/cat4.jpg");
+    border-radius: 25px;
     height: 200px;
     width: 200px;
+    float: left;
+    margin-left: 3%;
 }
 
 .picture5 {
-    background-color: green;
+    background-image: url("./pictures/cat5.jpg");
+    border-radius: 25px;
     height: 200px;
     width: 200px;
+    float: right;
+    margin-right: 3%;
 }
 
 .picture6 {
-    background-color: purple;
+    background-image: url("./pictures/cat6.jpg");
+    border-radius: 25px;
     height: 200px;
     width: 200px;
+    margin-left: 35%;
 }
 
 .picture7 {
-    background-color: pink;
+    background-image: url("./pictures/cat7.jpg");
+    border-radius: 25px;
     height: 200px;
     width: 200px;
+    float: left;
+    margin-left: 3%;
 }
 
 .picture8 {
-    background-color: brown;
+    background-image: url("./pictures/cat8.jpg");
+    border-radius: 25px;
     height: 200px;
     width: 200px;
+    float: right;
+    margin-right: 3%;
 }
 
 .picture9 {
-    background-color: aqua;
+    background-image: url("./pictures/cat9.jpg");
+    border-radius: 25px;
     height: 200px;
     width: 200px;
+    margin-left: 35%;
 }

@@ -21,8 +21,24 @@ class App extends Component {
     cats
   };
 
-  whenPictureClicked = (id) => {
-    if (this.state) {
+  whenPictureClicked = (event) => {
+    console.log(event.target);
+    console.log("----");
+    console.log(event.target.id);
+    console.log("----");
+    console.log("clicked");
+    for (let i = 0; i < cats.length; i++) {
+      if (event.target.id === cats[i].id) {
+
+        if (cats[i].clicked) {
+          
+          console.log("clicked before");
+        }
+        cats[i].clicked = true;
+      }
+      
+    }
+    if (this.state.cats) {
 
     } else {
       this.reset();
@@ -39,7 +55,7 @@ class App extends Component {
 
   incrementScore = () => {
     const newGuesses = this.state.correctGuesses +1;
-    this.setState(correctGuesses: newGuesses);
+    this.setState({correctGuesses: newGuesses});
     this.shuffleCatPictures();
   }
 
@@ -57,10 +73,11 @@ class App extends Component {
         <Wrapper>
           <PictureList
             results={classes}
-            image={cats.image}
+            whenPictureClicked={this.whenPictureClicked}
+            cats={cats}
           />
           <Picture
-            image={cats.image}
+            
           />
         </Wrapper>
         <Footer />
